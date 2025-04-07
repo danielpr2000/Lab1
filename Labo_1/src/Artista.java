@@ -1,7 +1,7 @@
 public class Artista {
     int id;
     String nombre;
-    String discoMasVendido;
+    Disco discoMasVendido;
     Double ventasTotales;
 
     private static int contadorIds = 1;
@@ -22,11 +22,22 @@ public class Artista {
         return nombre;
     }
 
-    public String getDiscoMasVendido() {
+    public Disco getDiscoMasVendido() {
         return discoMasVendido;
     }
 
     public Double getVentasTotales() {
         return ventasTotales;
     }
+
+    @Override
+    public String toString() {
+        return "Artista{" +
+                "ID: " + id + ", " +
+                "Nombre: '" + nombre + "', " +
+                "Disco Más Vendido: " + (discoMasVendido != null ? discoMasVendido.getTitulo() : "No disponible") + ", " +
+                "Ventas Totales: " + ventasTotales +
+                "}";
+    }
+
 }
