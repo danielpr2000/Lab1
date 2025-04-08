@@ -2,7 +2,7 @@ public class Artista {
     int id;
     String nombre;
     Disco discoMasVendido;
-    Double ventasTotales;
+    int ventasTotales;
 
     private static int contadorIds = 1;
 
@@ -10,7 +10,7 @@ public class Artista {
         this.id = contadorIds++; // Asigna un id ascendente
         this.nombre = nombre;
         this.discoMasVendido = null; // Inicializa disco más vendido en null
-        this.ventasTotales = 0.0; // Inicializa ventas totales en 0
+        this.ventasTotales = 0; // Inicializa ventas totales en 0
     }
 
     // Métodos getter y setter si los necesitas
@@ -26,7 +26,7 @@ public class Artista {
         return discoMasVendido;
     }
 
-    public Double getVentasTotales() {
+    public int getVentasTotales() {
         return ventasTotales;
     }
 

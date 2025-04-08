@@ -1,9 +1,9 @@
 public class Disco {
     Artista artista;
     String titulo;
-    Integer ventasTotales;
+    int ventasTotales;
 
-    public Disco(Artista artista, String titulo, Integer ventasTotales) {
+    public Disco(Artista artista, String titulo, int ventasTotales) {
         this.artista = artista;
         this.titulo = titulo;
         this.ventasTotales = ventasTotales;
@@ -25,7 +25,7 @@ public class Disco {
         this.titulo = titulo;
     }
 
-    public Integer getVentasTotales() {
+    public int getVentasTotales() {
         return ventasTotales;
     }
 
